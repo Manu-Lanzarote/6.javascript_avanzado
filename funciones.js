@@ -136,32 +136,100 @@
 // b.	Triángulo: (base * altura) / 2
 // c.	Cuadrado: lado * lado
 
-let figura = prompt(
-  `¿De qué figura quieres calcular el área?
-  1 - Círculo
-  2 - Cuadrado
-  3 - Triángulo`
-);
+// let figura = prompt(
+//   `¿De qué figura quieres calcular el área?
+//   1 - Círculo
+//   2 - Cuadrado
+//   3 - Triángulo`
+// );
 
-//Pido los valores del círculo
-let radio = parseInt(prompt("¿Cuánto mide el radio del círculo?"));
+// let radio;
+// let lado;
+// let base;
+// let altura;
 
-function circulo(dato) {
-  let area = dato * dato * Math.PI;
-  return area;
-}
-let resulCirculo = circulo(radio);
+// if (figura === "1") {
+//   // //Pido los valores del círculo
+//   radio = parseInt(prompt("¿Cuánto mide el radio del círculo?"));
+//   //Función círculo
+//   function circulo(dato) {
+//     let area = dato * dato * Math.PI;
+//     return area;
+//   }
+//   let resulCirculo = circulo(radio);
+//   console.log(resulCirculo);
+// } else if (figura === "2") {
+//   // Pido los valores del cuadrado
+//   lado = parseInt(prompt("¿Cuánto mide el lado del cuadrado?"));
+//   //Función cuadrado
+//   function cuadrado(dato) {
+//     let area = dato * dato;
+//     return area;
+//   }
+//   let resulCuadrado = cuadrado(lado);
+//   console.log(resulCuadrado);
+// } else if (figura === "3") {
+//   // //Pido los valores del triángulo
+//   base = parseInt(prompt("¿Cuánto mide la base del triángulo?"));
+//   altura = parseInt(prompt("¿Cuánto mide la altura del triángulo?"));
+//   //Función triángulo
+//   function triangulo(dato1, dato2) {
+//     let area = (dato1 * dato2) / 2;
+//     return area;
+//   }
+//   let resulTriangulo = triangulo(base, altura);
+//   console.log(resulTriangulo);
+// } else {
+//   console.log("El valor introducido no es válido");
+// }
 
-if (figura === "1") {
-  console.log(resulCirculo);
-}
+//
+// 11.	Crea un aplicación que nos convierta una cantidad de euros introducida por teclado a otra moneda, estas pueden ser a dólares, yenes o libras. El método tendrá como parámetros, la cantidad de euros y la moneda a pasar que será una cadena, este no devolverá ningún valor, mostrará un mensaje indicando el cambio.
+// a.	0.86 libras es un 1 €
+// b.	1.28611 $ es un 1 €
+// c.	129.852 yenes es un 1 €
 
-// Pido los valores del cuadrado
-let lado = parseInt(prompt("¿Cuánto mide el lado del cuadrado?"));
+// let cantidad = parseInt(prompt("Introduce cantidad en euros"));
+// let moneda = prompt(
+//   `Introduce tipo de moneda:
+// - Dolares
+// - Yenes
+// - Libras`.toLowerCase()
+// );
 
-//Pido los valores del triángulo
-let base = parseInt(prompt("¿Cuánto mide la base del triángulo?"));
-let altura = parseInt(prompt("¿Cuánto mide la altura del triángulo?"));
+// function cambio(num1, str1) {
+//   switch (moneda) {
+//     case "dolares":
+//       let dolar = num1 * 1.28611;
+//       return `${num1} euros equivalen a ${dolar} dolares`;
+//       break;
+//     case "yenes":
+//       let yen = num1 * 129.852;
+//       return `${num1} euros equivalen a ${yen} yenes`;
+//       break;
+//     case "libras":
+//       let libra = num1 * 0.86;
+//       return `${num1} euros equivalen a ${libra} libras`;
+//       break;
+//     default:
+//       return "Error";
+//   }
+// }
+// let resulMonedas = cambio(cantidad, moneda);
+// console.log(resulMonedas);
 
-function cuadrado(dato) {}
-function triangulo(dato1, dato2) {}
+//
+// 12.	Escribe una función a la que le pasamos un año y devuelve true si es bisiesto. En el programa principal, pídele al usuario un número y muestra en pantalla “El año … es bisiesto” o “El año … no es bisiesto” y sigue pidiendo números y diciendo si es o no bisiesto hasta que introduzca un 0. Un año es bisiesto si es divisible entre 4, pero no si es divisible entre 100 pero si es divisible entre 400 sí lo es.
+
+// let anyo = parseInt(prompt("Dame un año"));
+// function calcBisiestos(dato) {
+//   let bisiesto = (anyo % 4 == 0 && anyo % 100 != 0) || anyo % 400 == 0;
+//   return bisiesto;
+// }
+// let resulCalcBisiestos = calcBisiestos(anyo);
+
+// if (resulCalcBisiestos) {
+//   document.getElementById("div1").innerHTML = `El año ${anyo} es bisiesto`;
+// } else {
+//   document.getElementById("div1").innerHTML = `El año ${anyo} no es bisiesto`;
+//}
