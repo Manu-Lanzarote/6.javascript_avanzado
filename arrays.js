@@ -87,8 +87,8 @@
 
 // document.getElementById("dom").innerHTML = mes;
 
-//
-// 6.	Crear un array. Usar un for para pedir 3 valores al usuario y guardarlos en el mismo. Comparar los valores del array una vez tenga los 3 valores y mostrar en pantalla el más pequeño.
+//TODO (hacer diferente)
+// 6. Crear un array. Usar un for para pedir 3 valores al usuario y guardarlos en el mismo. Comparar los valores del array una vez tenga los 3 valores y mostrar en pantalla el más pequeño.
 
 // // Creo y guardo valores
 // const array6 = [];
@@ -127,5 +127,31 @@
 
 // document.getElementById("dom").innerHTML = resultado;
 
+// TODO Chequear cambios slack con ander
+
 //
 // 8.	Crea un programa que a partir de un array que contiene las edades de 20 alumnos (generadas aleatoriamente entre 18 y 35), calcule y nos devuelva la media de edad de dicha clase.
+
+// const edades = [];
+// let aux;
+// for (let i = 0; i < 20; i++) {
+//   aux = Math.floor(Math.random() * 18) + 18;
+//   edades.push(aux);
+// }
+// console.log(edades);
+
+// let aux2 = 0;
+// for (let i = 0; i < edades.length; i++) {
+//   aux2 = aux2 + edades[i];
+// }
+// let resultado = Math.floor(aux2 / 20);
+
+// document.getElementById(
+//   "dom"
+// ).innerHTML = `<p>La media de edad de esta clase es de ${resultado} años</p>`;
+
+//
+// 9.	Crear un array de 10 valores. Pon el valor 1 en cada una de la posiciones. Pedir al usuario que introduzca un número entre 0 y 9. Cada vez que introduzca un valor entre 0 y 9, mostrar el valor de esa posición del array, y modificarlo multiplicando por 2.
+
+let diezValores = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let numUser1 = parseInt(prompt("Introduce un número entre el 0 y el 9"));
