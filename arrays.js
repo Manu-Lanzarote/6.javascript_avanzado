@@ -87,32 +87,8 @@
 
 // document.getElementById("dom").innerHTML = mes;
 
-//TODO (hacer diferente)
+// (hacer diferente)
 // 6. Crear un array. Usar un for para pedir 3 valores al usuario y guardarlos en el mismo. Comparar los valores del array una vez tenga los 3 valores y mostrar en pantalla el más pequeño.
-
-// // Creo y guardo valores
-// const array6 = [];
-// let pideValor = "";
-// for (let i = 0; i < 3; i++) {
-//   pideValor = prompt("Introduce un valor");
-//   array6.push(pideValor);
-// }
-
-// // Comparo valores
-// let aux = 10000000000000000000000;
-// let aux2 = 0;
-// //Comparar los valores
-// for (let i = 0; i < array6.length; i++) {
-//   aux2 = parseInt(array6[i]);
-//   if (aux2 < aux) {
-//     aux = aux2;
-//   }
-// }
-
-// // Imprimo resultado
-// document.getElementById(
-//   "dom"
-// ).innerHTML = `<p>El valor más pequeño es ${aux}</p> `;
 
 //
 // 7.	Haz un programa que realice la media de los valores que contiene un array de 10 números y lo muestre por consola. No es necesario pedir los números al usuario.
@@ -127,7 +103,7 @@
 
 // document.getElementById("dom").innerHTML = resultado;
 
-// TODO Chequear cambios slack con ander
+// Chequear cambios slack con ander
 
 //
 // 8.	Crea un programa que a partir de un array que contiene las edades de 20 alumnos (generadas aleatoriamente entre 18 y 35), calcule y nos devuelva la media de edad de dicha clase.
